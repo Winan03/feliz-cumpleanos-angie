@@ -3,7 +3,7 @@ services:
     name: cumpleanos-angie
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm run preview
+    startCommand: npm run preview -- --port $PORT --host 0.0.0.0
     staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
